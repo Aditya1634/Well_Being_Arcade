@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Reporting</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: url("C:\Users\yashk\Desktop\istockphoto-1181899947-612x612.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(37, 196, 164)595;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        } */
+
+        h1 {
+            text-align: center;
+            color: rgb(37, 196, 164)595;
+            margin-bottom: 120px;
+            font-size: 8cap;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .mood-options {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mood-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 40px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+        }
+
+        .mood-label:hover {
+            background-color: #ccc;
+            background-image: url('C:\Users\yashk\Desktop\istockphoto-1181899947-612x612.jpg');
+        }
+
+        .emoji {
+            font-size: 48px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How's Your Mood Today?</h1>
+        <form id="moodForm" class="mood-options">
+            <label class="mood-label" for="happy">😄
+                <input type="radio" name="mood" id="happy" value="happy">
+            </label>
+            <label class="mood-label" for="sad">😢
+                <input type="radio" name="mood" id="sad" value="sad">
+            </label>
+            <label class="mood-label" for="pleasant">😊
+                <input type="radio" name="mood" id="pleasant" value="pleasant">
+            </label>
+            <label class="mood-label" for="angry">😡
+                <input type="radio" name="mood" id="angry" value="angry">
+            </label>
+            <label class="mood-label" for="demotivated">😔
+                <input type="radio" name="mood" id="demotivated" value="demotivated">
+            </label>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

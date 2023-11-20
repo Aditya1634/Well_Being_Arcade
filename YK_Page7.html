@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('C:/Users/yashk/Downloads/image 24.svg'); /* Use forward slashes in the file path */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            image-rendering: auto;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh; /* Use 100vh for 100% of the viewport height */
+            position: relative; /* Relative positioning for absolute positioning of elements inside it */
+        }
+
+        .bottom-image {
+            width: 5%; /* Adjust the width of the bottom image */
+            align-self: flex-start;
+            margin-top: -10em; /* Adjust the margin to position it */
+            position: relative; /* Relative positioning for absolute positioning of elements inside it */
+        }
+
+        .top-image {
+            width: 5%; /* Adjust the width of the top image */
+            align-self: flex-end;
+            margin-top: -15em; /* Adjust the margin to position it */
+        }
+
+        .overlay {
+            position: relative;
+            top: 10;
+            left: 50;
+            right: -20;
+            background-color: black;
+            padding: 5px;
+            margin-top: -6em;
+        }
+
+        .text {
+            color: white;
+            font-size: 16px;
+            
+        }
+
+        .exclamation-mark {
+            font-size: 48px;
+            color: rgb(6, 6, 6);
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .bottom-image,
+            .top-image {
+                width: 40%; /* Make images full-width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="overlay">
+            <div class="text">Wow, A Magical Lamp!
+                <!-- <span class="exclamation-mark">!</span> -->
+            </div>
+        </div>
+        <img class="bottom-image" src="C:/Users/yashk/Downloads/boy.svg"   
+        alt="Bottom Image">
+                       
+
+        <img class="top-image" src="C:/Users/yashk/Downloads/image-removebg-preview 1.svg" alt="Top Image">
+    </div>
+</body>
+</html>
